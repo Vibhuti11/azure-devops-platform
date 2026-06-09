@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# React
+build/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# VSCode
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log

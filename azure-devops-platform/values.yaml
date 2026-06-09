@@ -1,0 +1,10 @@
+backend:
+  image: acrvibhuti2026.azurecr.io/backend-api:v1
+  replicas: 2
+
+frontend:
+  image: acrvibhuti2026.azurecr.io/frontend:v2
+  replicas: 2
+
+ingress:
+  enabled: true

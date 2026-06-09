@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: backend-api
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: backend-api
+
+  template:
+    metadata:
+      labels:
+        app: backend-api
+
+    spec:
+      containers:
+      - name: backend-api
+
+        image: acrvibhuti2026.azurecr.io/backend-api:v1
+
+        ports:
+        - containerPort: 3000
